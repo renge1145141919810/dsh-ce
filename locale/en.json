@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cheat Engine bridge",
+    "description": "Connects the local Cheat Engine to DSH so the model can use CE's scanner, memory read/write, disassembler, auto assembler and debugger directly."
+  }
+}

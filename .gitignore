@@ -1,0 +1,17 @@
+# 依赖（本项目零运行时依赖，留着以防万一）
+node_modules/
+
+# 开发期的一次性调试脚本，不进仓库（可复现的自检在 test/）
+_dev/
+
+# 产物
+*.zip
+*.log
+*.tmp
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

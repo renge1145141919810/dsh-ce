@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cheat Engine 桥",
+    "description": "把本机 Cheat Engine 接到 DSH：复用 CE 的扫描器、内存读写、反汇编、自动汇编与调试器，让模型直接调用。"
+  }
+}

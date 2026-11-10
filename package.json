@@ -1,0 +1,45 @@
+{
+  "name": "@local/dsh-ce",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "桥接本机 Cheat Engine：把 CE 的扫描、内存读写、反汇编、自动汇编能力暴露给 DSH 的模型使用。",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "cheat-engine",
+    "dsh",
+    "memory-scanner",
+    "reverse-engineering",
+    "pointer-scan"
+  ],
+  "scripts": {
+    "test": "node test/demo.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "autorun/dsh-ce-bridge.lua"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# 统一用 LF：仓库主要在 Windows 上开发，但桥脚本要能被任何平台的编辑器安全处理，
+# 也避免 git 每次 diff 都说「整个文件都改了」。
+* text=auto eol=lf
+
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.json  text eol=lf
+*.lua   text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf
+*.svg   text eol=lf
+*.c     text eol=lf
+
+*.png   binary
+*.jpg   binary
+*.zip   binary
